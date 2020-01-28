@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>Todo App with Tailwind</title>
+        <link href="https://unpkg.com/tailwindcss@^1.0/dist/tailwind.min.css" 
+        rel="stylesheet"/>        
+    </head>
+    <body>
+        <div class="h-screen w-width bg-orange-400 flex flex-col justify-center items-center">
+            <div class="header">        
+                <h1 class="text-4xl">JB Todo App w/ Tailwind</h1>
+                <div class="form flex">
+                    <input 
+                    class="appearance-none border w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" 
+                    id="username" 
+                    type="newText" 
+                    placeholder="Add New Todo"
+                    />
+                    <button 
+                    id="newBtn"
+                    class="bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4">
+                        Add
+                    </button>
+                </div>
+            </div>
+            <div class="todos w-10/12 mt-8">
+                <div class="pending">
+                    <h3 class="text-2xl">Pending:</h3>
+                    <ul id="pendingList">
+                        <li class="text-center p-3 bg-red-200 mt-4 rounded shadow-lg cursor-pointer hover:bg-red-700">item 1</li>
+                        <li class="text-center p-3 bg-red-200 mt-4 rounded shadow-lg cursor-pointer hover:bg-red-700">item 2</li>
+                    </ul>
+                </div>
+                <div class="completed mt-8">
+                    <h3 class="text-2xl">Completed:</h3>
+                    <ul id="completedList">
+                        <li class="text-center p-3 line-through bg-green-200 mt-4 rounded shadow-lg cursor-pointer hover:bg-green-700">item 3</liclass="text-center p-3 bg-red-200 mt-4 rounded shadow-lg cursor-pointer hover:bg-red-700">
+                        <li class="text-center p-3 line-through bg-green-200 mt-4 rounded shadow-lg cursor-pointer hover:bg-green-700">item 4</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <script src-"main.js"></script>        
+    </body>
+</html>
